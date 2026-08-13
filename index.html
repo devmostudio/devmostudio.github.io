@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devmo Studio | Destek & Gizlilik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(45deg, #b8b0ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Hero Section -->
+    <header class="py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl font-extrabold mb-4 gradient-text">Devmo Studio</h1>
+            <p class="text-slate-400 text-lg">Yenilikçi ve kullanıcı dostu mobil çözümler.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 pb-20">
+        
+        <!-- App Info Cards -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- AdMob Info Card -->
+            <div class="glass p-8 rounded-3xl shadow-xl hover:scale-[1.02] transition-transform">
+                <div class="flex items-center mb-4">
+                    <div class="bg-yellow-500/20 p-3 rounded-2xl mr-4">
+                        <i class="fa-solid fa-rectangle-ad text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h2 class="text-xl font-bold">App-Ads.txt Bilgisi</h2>
+                </div>
+                <p class="text-slate-400 mb-4 text-sm">Reklam envanterimizin doğrulanması için gerekli resmi kimlik bilgisi.</p>
+                <code class="block bg-black/40 p-4 rounded-xl text-yellow-400 text-xs break-all">
+                    google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+                </code>
+            </div>
+
+            <!-- Support Card -->
+            <div class="glass p-8 rounded-3xl shadow-xl hover:scale-[1.02] transition-transform">
+                <div class="flex items-center mb-4">
+                    <div class="bg-blue-500/20 p-3 rounded-2xl mr-4">
+                        <i class="fa-solid fa-envelope text-blue-500 text-2xl"></i>
+                    </div>
+                    <h2 class="text-xl font-bold">Destek & İletişim</h2>
+                </div>
+                <p class="text-slate-400 mb-4 text-sm">Habido uygulaması hakkında soru veya geri bildirimleriniz için bize ulaşın.</p>
+                <a href="mailto:support@devmostudio.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl transition-colors">
+                    E-posta Gönder
+                </a>
+            </div>
+        </div>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy" class="glass p-10 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <i class="fa-solid fa-shield-halved mr-4 text-purple-500"></i>
+                Gizlilik Politikası
+            </h2>
+            
+            <div class="prose prose-invert max-w-none text-slate-300 space-y-6">
+                <p class="italic text-sm text-slate-500">Son Güncelleme: 23 Mayıs 2024</p>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-2">1. Toplanan Veriler</h3>
+                    <p>Habido, kullanıcıların girdiği görev ve alışkanlık verilerini cihaz üzerinde yerel olarak saklar. Reklam hizmetleri (AdMob) için anonim cihaz kimliği kullanılabilir.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-2">2. Üçüncü Taraf Hizmetleri</h3>
+                    <p>Uygulamamız reklam göstermek için Google AdMob hizmetini kullanmaktadır. Bu hizmetler kendi gizlilik politikalarına tabidir.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-2">3. Kullanıcı Hakları</h3>
+                    <p>Kullanıcılar uygulamayı silerek cihazdaki tüm verilerinin anında temizlenmesini sağlayabilirler.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-10 text-center text-slate-500 text-sm border-t border-slate-800">
+        <p>&copy; 2024 Devmo Studio. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
