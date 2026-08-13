@@ -1,91 +1,85 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devmo Studio | Destek & Gizlilik</title>
+    <title>Devmo Studio | Oopsy Loopsy App</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #0f172a; color: #f8fafc; }
+        body { background-color: #0f172a; color: #f1f5f9; }
         .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .gradient-text { background: linear-gradient(45deg, #b8b0ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .play-button { transition: transform 0.2s, background-color 0.2s; }
+        .play-button:hover { transform: scale(1.05); background-color: #1e293b; }
     </style>
 </head>
-<body class="font-sans antialiased">
+<body class="antialiased">
 
     <!-- Hero Section -->
-    <header class="py-16 px-4 text-center">
+    <header class="py-24 px-6 text-center">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl font-extrabold mb-4 gradient-text">Devmo Studio</h1>
-            <p class="text-slate-400 text-lg">Yenilikçi ve kullanıcı dostu mobil çözümler.</p>
-        </div>
-    </header>
-
-    <main class="max-w-5xl mx-auto px-4 pb-20">
-        
-        <!-- App Info Cards -->
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
-            <!-- AdMob Info Card -->
-            <div class="glass p-8 rounded-3xl shadow-xl hover:scale-[1.02] transition-transform">
-                <div class="flex items-center mb-4">
-                    <div class="bg-yellow-500/20 p-3 rounded-2xl mr-4">
-                        <i class="fa-solid fa-rectangle-ad text-yellow-500 text-2xl"></i>
+            <h1 class="text-7xl font-black mb-6 gradient-text">Oopsy Loopsy</h1>
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">Master your habits, organize your life. A minimal and powerful habit tracker designed for focus and productivity.</p>
+            
+            <!-- Google Play Store Button -->
+            <div class="flex justify-center">
+                <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" target="_blank" class="play-button glass flex items-center px-8 py-4 rounded-2xl border border-slate-700 shadow-2xl">
+                    <i class="fa-brands fa-google-play text-4xl mr-4 text-blue-400"></i>
+                    <div class="text-left">
+                        <div class="text-xs uppercase text-slate-400 font-bold leading-none">GET IT ON</div>
+                        <div class="text-2xl font-semibold leading-tight text-white">Google Play</div>
                     </div>
-                    <h2 class="text-xl font-bold">App-Ads.txt Bilgisi</h2>
-                </div>
-                <p class="text-slate-400 mb-4 text-sm">Reklam envanterimizin doğrulanması için gerekli resmi kimlik bilgisi.</p>
-                <code class="block bg-black/40 p-4 rounded-xl text-yellow-400 text-xs break-all">
-                    google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-                </code>
-            </div>
-
-            <!-- Support Card -->
-            <div class="glass p-8 rounded-3xl shadow-xl hover:scale-[1.02] transition-transform">
-                <div class="flex items-center mb-4">
-                    <div class="bg-blue-500/20 p-3 rounded-2xl mr-4">
-                        <i class="fa-solid fa-envelope text-blue-500 text-2xl"></i>
-                    </div>
-                    <h2 class="text-xl font-bold">Destek & İletişim</h2>
-                </div>
-                <p class="text-slate-400 mb-4 text-sm">Habido uygulaması hakkında soru veya geri bildirimleriniz için bize ulaşın.</p>
-                <a href="mailto:support@devmostudio.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl transition-colors">
-                    E-posta Gönder
                 </a>
             </div>
         </div>
+    </header>
 
-        <!-- Privacy Policy Section -->
-        <section id="privacy" class="glass p-10 rounded-3xl shadow-xl">
-            <h2 class="text-3xl font-bold mb-8 flex items-center">
-                <i class="fa-solid fa-shield-halved mr-4 text-purple-500"></i>
-                Gizlilik Politikası
-            </h2>
-            
-            <div class="prose prose-invert max-w-none text-slate-300 space-y-6">
-                <p class="italic text-sm text-slate-500">Son Güncelleme: 23 Mayıs 2024</p>
-                
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-2">1. Toplanan Veriler</h3>
-                    <p>Habido, kullanıcıların girdiği görev ve alışkanlık verilerini cihaz üzerinde yerel olarak saklar. Reklam hizmetleri (AdMob) için anonim cihaz kimliği kullanılabilir.</p>
+    <main class="max-w-5xl mx-auto px-6 pb-20">
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-3 gap-6 mb-20">
+            <div class="glass p-8 rounded-3xl text-center border border-slate-800">
+                <div class="bg-blue-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-check-double text-blue-500 text-2xl"></i>
                 </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-2">2. Üçüncü Taraf Hizmetleri</h3>
-                    <p>Uygulamamız reklam göstermek için Google AdMob hizmetini kullanmaktadır. Bu hizmetler kendi gizlilik politikalarına tabidir.</p>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-2">3. Kullanıcı Hakları</h3>
-                    <p>Kullanıcılar uygulamayı silerek cihazdaki tüm verilerinin anında temizlenmesini sağlayabilirler.</p>
-                </div>
+                <h3 class="text-lg font-bold mb-2">Smart Tasks</h3>
+                <p class="text-sm text-slate-400">Keep track of your daily tasks and never miss a deadline again.</p>
             </div>
-        </section>
+            <div class="glass p-8 rounded-3xl text-center border border-slate-800">
+                <div class="bg-purple-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-chart-line text-purple-500 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Habit Streaks</h3>
+                <p class="text-sm text-slate-400">Build long-term habits with beautiful visual progress and streaks.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl text-center border border-slate-800">
+                <div class="bg-yellow-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-layer-group text-yellow-500 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Dynamic Widgets</h3>
+                <p class="text-sm text-slate-400">Access your habits and todos directly from your home screen with Glance widgets.</p>
+            </div>
+        </div>
 
+        <!-- Support Section -->
+        <div class="glass p-12 rounded-[3rem] text-center max-w-2xl mx-auto border border-slate-800">
+            <h2 class="text-3xl font-bold mb-4 text-white">Need Support?</h2>
+            <p class="text-slate-400 mb-8 leading-relaxed">Have a question or feedback? Our team is here to help you get the most out of Oopsy Loopsy</p>
+            <a href="mailto:devmostudio@protonmail.com" class="bg-white text-slate-900 px-8 py-3 rounded-xl font-bold hover:bg-slate-200 transition-colors">
+                Contact Us via Email
+            </a>
+        </div>
     </main>
 
-    <footer class="py-10 text-center text-slate-500 text-sm border-t border-slate-800">
-        <p>&copy; 2024 Devmo Studio. Tüm hakları saklıdır.</p>
+    <footer class="py-12 border-t border-slate-800 text-center">
+        <div class="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-6 text-sm font-medium text-slate-400">
+            <a href="/privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+            <a href="/app-ads.txt" class="hover:text-blue-400 transition-colors">App-Ads.txt</a>
+            <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" class="hover:text-blue-400 transition-colors">View on Store</a>
+        </div>
+        <div class="text-xs text-slate-600">
+            <p>&copy; 2024 Devmo Studio. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
