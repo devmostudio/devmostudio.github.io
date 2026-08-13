@@ -19,9 +19,7 @@
     <nav class="py-6 px-8 border-b border-slate-800 sticky top-0 bg-slate-900/80 backdrop-blur-md z-50">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <a href="#" class="text-xl font-black tracking-tighter gradient-text">DEVMO STUDIO</a>
-            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-                <a href="#features" class="hover:text-white transition">Features</a>
-                <a href="#faq" class="hover:text-white transition">FAQ</a>
+            <div class="flex gap-6 text-sm font-medium text-slate-400">
                 <a href="privacy-policy.html" class="hover:text-white transition underline italic">Privacy Policy</a>
             </div>
         </div>
@@ -31,18 +29,18 @@
     <header class="py-24 px-6 text-center">
         <div class="max-w-4xl mx-auto">
             <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-400 uppercase bg-blue-500/10 rounded-full border border-blue-500/20 text-center">
-                Now Available on Android
+                Privacy-First Productivity
             </span>
             <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tight text-white">Oopsy Loopsy</h1>
             <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-                Master your habits, organize your tasks, and stay productive. A minimal tracker designed for privacy and speed.
+                Build better habits, manage daily tasks, and track your mood. All your data stays on your device, exactly where it belongs.
             </p>
             
             <!-- Play Store Button -->
             <div class="flex justify-center">
-                <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" target="_blank" class="glass flex items-center px-8 py-4 rounded-3xl border border-slate-700 shadow-2xl hover:bg-slate-800 transition-all active:scale-95">
+                <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" target="_blank" class="glass flex items-center px-8 py-4 rounded-3xl border border-slate-700 shadow-2xl hover:bg-slate-800 transition-all active:scale-95 text-left">
                     <i class="fa-brands fa-google-play text-4xl mr-4 text-blue-400"></i>
-                    <div class="text-left">
+                    <div>
                         <div class="text-[10px] uppercase text-slate-500 font-bold leading-none tracking-widest">GET IT ON</div>
                         <div class="text-2xl font-semibold leading-tight text-white">Google Play</div>
                     </div>
@@ -51,59 +49,37 @@
         </div>
     </header>
 
-    <!-- Features Section -->
-    <section id="features" class="max-w-6xl mx-auto px-6 py-20">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4 text-white">Why Oopsy Loopsy?</h2>
-            <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 text-center">
-                <div class="bg-blue-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 mx-auto">
-                    <i class="fa-solid fa-shield-halved text-blue-500 text-xl"></i>
+    <!-- Features Section (Habit, Todo/Mood, Stats) -->
+    <section id="features" class="max-w-6xl mx-auto px-6 py-10 pb-32">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            
+            <!-- Habit Tracking -->
+            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 flex flex-col items-center">
+                <div class="bg-blue-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-calendar-check text-blue-500 text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-white">100% Privacy</h3>
-                <p class="text-slate-400 text-sm leading-relaxed text-center">Your data never leaves your device. Everything is stored locally in your private database.</p>
+                <h3 class="text-xl font-bold mb-3 text-white text-center">Habit Tracking</h3>
+                <p class="text-slate-400 text-sm leading-relaxed text-center">Create personalized habits and build long-term streaks. Stay consistent with smart reminders and easy check-ins.</p>
             </div>
 
-            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 text-center">
-                <div class="bg-purple-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 mx-auto">
-                    <i class="fa-solid fa-bolt text-purple-500 text-xl"></i>
+            <!-- Todo & Mood -->
+            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 flex flex-col items-center">
+                <div class="bg-purple-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-list-check text-purple-500 text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-white">Glance Widgets</h3>
-                <p class="text-slate-400 text-sm leading-relaxed text-center">Check your habits and todos directly from your home screen with high-performance widgets.</p>
+                <h3 class="text-xl font-bold mb-3 text-white text-center">Tasks & Mood</h3>
+                <p class="text-slate-400 text-sm leading-relaxed text-center">Manage your daily to-do list and log your mood entries. Understand how your productivity affects your well-being.</p>
             </div>
 
-            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 text-center">
-                <div class="bg-yellow-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 mx-auto">
-                    <i class="fa-solid fa-infinity text-yellow-500 text-xl"></i>
+            <!-- Statistics -->
+            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 flex flex-col items-center">
+                <div class="bg-green-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-chart-simple text-green-500 text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-white">Task Streaks</h3>
-                <p class="text-slate-400 text-sm leading-relaxed text-center">Visualize your consistency with beautifully designed streaks and completion logs.</p>
+                <h3 class="text-xl font-bold mb-3 text-white text-center">Deep Analytics</h3>
+                <p class="text-slate-400 text-sm leading-relaxed text-center">Visualize your progress with detailed statistics and completion charts. Track your journey to self-improvement.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="max-w-4xl mx-auto px-6 py-20 border-t border-slate-900">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
-        </div>
-        
-        <div class="space-y-6">
-            <div class="glass p-6 rounded-2xl border border-slate-800">
-                <h4 class="font-bold text-white mb-2">Is my data secure?</h4>
-                <p class="text-slate-400 text-sm">Yes. We use a local SQLite/Room database. We don't have servers, so we can't see your habits or tasks.</p>
-            </div>
-            <div class="glass p-6 rounded-2xl border border-slate-800">
-                <h4 class="font-bold text-white mb-2">How can I backup my data?</h4>
-                <p class="text-slate-400 text-sm">Since the app works offline, your data is backed up via standard Android System Backups if enabled on your device.</p>
-            </div>
-            <div class="glass p-6 rounded-2xl border border-slate-800">
-                <h4 class="font-bold text-white mb-2">Does the app collect analytics?</h4>
-                <p class="text-slate-400 text-sm">We use Firebase Analytics to improve app performance, but we never collect your personal habit or task titles.</p>
-            </div>
         </div>
     </section>
 
@@ -111,10 +87,10 @@
     <section class="max-w-5xl mx-auto px-6 py-20">
         <div class="glass p-12 rounded-[3rem] text-center border border-slate-800 bg-gradient-to-b from-slate-800/50 to-transparent">
             <h2 class="text-3xl font-bold mb-4 text-white">Need Support?</h2>
-            <p class="text-slate-400 mb-8 max-w-md mx-auto">Have questions, feedback, or need help with Oopsy Loopsy? Our team is ready to help.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-6">
-                <a href="mailto:devmostudio@protonmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-3 rounded-2xl font-bold transition-all">
-                    Email Support
+            <p class="text-slate-400 mb-8 max-w-md mx-auto leading-relaxed text-center">Have questions or feedback? Our team is ready to help you get the most out of Oopsy Loopsy.</p>
+            <div class="flex justify-center">
+                <a href="mailto:devmostudio@protonmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-3 rounded-2xl font-bold transition-all shadow-lg shadow-blue-900/20">
+                    Contact via Email
                 </a>
             </div>
         </div>
@@ -122,14 +98,14 @@
 
     <!-- Footer -->
     <footer class="py-16 border-t border-slate-900 text-center">
-        <div class="flex flex-wrap justify-center gap-8 mb-8 text-sm font-medium text-slate-500 uppercase tracking-widest">
+        <div class="flex flex-wrap justify-center gap-8 mb-8 text-xs font-bold text-slate-500 uppercase tracking-widest">
             <a href="privacy-policy.html" class="hover:text-blue-400 transition">Privacy Policy</a>
             <a href="app-ads.txt" class="hover:text-blue-400 transition">App-Ads.txt</a>
-            <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" target="_blank" class="hover:text-blue-400 transition">Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" target="_blank" class="hover:text-blue-400 transition italic">Google Play</a>
         </div>
-        <div class="text-slate-600 text-xs text-center w-full">
+        <div class="text-slate-600 text-[10px] text-center w-full uppercase tracking-tighter">
             <p>&copy; 2026 Devmo Studio. All rights reserved.</p>
-            <p class="mt-2 opacity-50 italic">Oopsy Loopsy — Habit & Task Tracker</p>
+            <p class="mt-2 opacity-40">Oopsy Loopsy — Habit, Task & Mood Tracker</p>
         </div>
     </footer>
 
