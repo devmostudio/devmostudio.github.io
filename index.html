@@ -3,31 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devmo Studio | Oopsy Loopsy App</title>
+    <title>Oopsy Loopsy | Habit & Task Tracker by Devmo Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #0f172a; color: #f1f5f9; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(45deg, #b8b0ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .play-button { transition: transform 0.2s, background-color 0.2s; }
-        .play-button:hover { transform: scale(1.05); background-color: #1e293b; }
+        body { background-color: #0f172a; color: #f1f5f9; scroll-behavior: smooth; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(45deg, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .feature-card:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: rgba(96, 165, 250, 0.3); }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased font-sans">
+
+    <!-- Navigation -->
+    <nav class="py-6 px-8 border-b border-slate-800 sticky top-0 bg-slate-900/80 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-black tracking-tighter gradient-text">DEVMO STUDIO</a>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                <a href="#features" class="hover:text-white transition">Features</a>
+                <a href="#faq" class="hover:text-white transition">FAQ</a>
+                <a href="privacy-policy.html" class="hover:text-white transition underline italic">Privacy Policy</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <header class="py-24 px-6 text-center">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-7xl font-black mb-6 gradient-text">Oopsy Loopsy</h1>
-            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">Master your habits, organize your life. A minimal and powerful habit tracker designed for focus and productivity.</p>
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-400 uppercase bg-blue-500/10 rounded-full border border-blue-500/20 text-center">
+                Now Available on Android
+            </span>
+            <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tight text-white">Oopsy Loopsy</h1>
+            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Master your habits, organize your tasks, and stay productive. A minimal tracker designed for privacy and speed.
+            </p>
             
-            <!-- Google Play Store Button -->
+            <!-- Play Store Button -->
             <div class="flex justify-center">
-                <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" target="_blank" class="play-button glass flex items-center px-8 py-4 rounded-2xl border border-slate-700 shadow-2xl">
+                <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" target="_blank" class="glass flex items-center px-8 py-4 rounded-3xl border border-slate-700 shadow-2xl hover:bg-slate-800 transition-all active:scale-95">
                     <i class="fa-brands fa-google-play text-4xl mr-4 text-blue-400"></i>
                     <div class="text-left">
-                        <div class="text-xs uppercase text-slate-400 font-bold leading-none">GET IT ON</div>
+                        <div class="text-[10px] uppercase text-slate-500 font-bold leading-none tracking-widest">GET IT ON</div>
                         <div class="text-2xl font-semibold leading-tight text-white">Google Play</div>
                     </div>
                 </a>
@@ -35,50 +51,85 @@
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 pb-20">
-        <!-- Features Grid -->
-        <div class="grid md:grid-cols-3 gap-6 mb-20">
-            <div class="glass p-8 rounded-3xl text-center border border-slate-800">
-                <div class="bg-blue-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <i class="fa-solid fa-check-double text-blue-500 text-2xl"></i>
+    <!-- Features Section -->
+    <section id="features" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 text-white">Why Oopsy Loopsy?</h2>
+            <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 text-center">
+                <div class="bg-blue-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                    <i class="fa-solid fa-shield-halved text-blue-500 text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Smart Tasks</h3>
-                <p class="text-sm text-slate-400">Keep track of your daily tasks and never miss a deadline again.</p>
+                <h3 class="text-xl font-bold mb-3 text-white">100% Privacy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed text-center">Your data never leaves your device. Everything is stored locally in your private database.</p>
             </div>
-            <div class="glass p-8 rounded-3xl text-center border border-slate-800">
-                <div class="bg-purple-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <i class="fa-solid fa-chart-line text-purple-500 text-2xl"></i>
+
+            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 text-center">
+                <div class="bg-purple-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                    <i class="fa-solid fa-bolt text-purple-500 text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Habit Streaks</h3>
-                <p class="text-sm text-slate-400">Build long-term habits with beautiful visual progress and streaks.</p>
+                <h3 class="text-xl font-bold mb-3 text-white">Glance Widgets</h3>
+                <p class="text-slate-400 text-sm leading-relaxed text-center">Check your habits and todos directly from your home screen with high-performance widgets.</p>
             </div>
-            <div class="glass p-8 rounded-3xl text-center border border-slate-800">
-                <div class="bg-yellow-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <i class="fa-solid fa-layer-group text-yellow-500 text-2xl"></i>
+
+            <div class="glass feature-card p-10 rounded-[2.5rem] border border-slate-800 text-center">
+                <div class="bg-yellow-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                    <i class="fa-solid fa-infinity text-yellow-500 text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Dynamic Widgets</h3>
-                <p class="text-sm text-slate-400">Access your habits and todos directly from your home screen with Glance widgets.</p>
+                <h3 class="text-xl font-bold mb-3 text-white">Task Streaks</h3>
+                <p class="text-slate-400 text-sm leading-relaxed text-center">Visualize your consistency with beautifully designed streaks and completion logs.</p>
             </div>
         </div>
+    </section>
 
-        <!-- Support Section -->
-        <div class="glass p-12 rounded-[3rem] text-center max-w-2xl mx-auto border border-slate-800">
+    <!-- FAQ Section -->
+    <section id="faq" class="max-w-4xl mx-auto px-6 py-20 border-t border-slate-900">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="space-y-6">
+            <div class="glass p-6 rounded-2xl border border-slate-800">
+                <h4 class="font-bold text-white mb-2">Is my data secure?</h4>
+                <p class="text-slate-400 text-sm">Yes. We use a local SQLite/Room database. We don't have servers, so we can't see your habits or tasks.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl border border-slate-800">
+                <h4 class="font-bold text-white mb-2">How can I backup my data?</h4>
+                <p class="text-slate-400 text-sm">Since the app works offline, your data is backed up via standard Android System Backups if enabled on your device.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl border border-slate-800">
+                <h4 class="font-bold text-white mb-2">Does the app collect analytics?</h4>
+                <p class="text-slate-400 text-sm">We use Firebase Analytics to improve app performance, but we never collect your personal habit or task titles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="max-w-5xl mx-auto px-6 py-20">
+        <div class="glass p-12 rounded-[3rem] text-center border border-slate-800 bg-gradient-to-b from-slate-800/50 to-transparent">
             <h2 class="text-3xl font-bold mb-4 text-white">Need Support?</h2>
-            <p class="text-slate-400 mb-8 leading-relaxed">Have a question or feedback? Our team is here to help you get the most out of Oopsy Loopsy</p>
-            <a href="mailto:devmostudio@protonmail.com" class="bg-white text-slate-900 px-8 py-3 rounded-xl font-bold hover:bg-slate-200 transition-colors">
-                Contact Us via Email
-            </a>
+            <p class="text-slate-400 mb-8 max-w-md mx-auto">Have questions, feedback, or need help with Oopsy Loopsy? Our team is ready to help.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="mailto:devmostudio@protonmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-3 rounded-2xl font-bold transition-all">
+                    Email Support
+                </a>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="py-12 border-t border-slate-800 text-center">
-        <div class="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-6 text-sm font-medium text-slate-400">
-            <a href="/privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
-            <a href="/app-ads.txt" class="hover:text-blue-400 transition-colors">App-Ads.txt</a>
-            <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" class="hover:text-blue-400 transition-colors">View on Store</a>
+    <!-- Footer -->
+    <footer class="py-16 border-t border-slate-900 text-center">
+        <div class="flex flex-wrap justify-center gap-8 mb-8 text-sm font-medium text-slate-500 uppercase tracking-widest">
+            <a href="privacy-policy.html" class="hover:text-blue-400 transition">Privacy Policy</a>
+            <a href="app-ads.txt" class="hover:text-blue-400 transition">App-Ads.txt</a>
+            <a href="https://play.google.com/store/apps/details?id=com.devsumos.habido" target="_blank" class="hover:text-blue-400 transition">Play Store</a>
         </div>
-        <div class="text-xs text-slate-600">
-            <p>&copy; 2024 Devmo Studio. All rights reserved.</p>
+        <div class="text-slate-600 text-xs text-center w-full">
+            <p>&copy; 2026 Devmo Studio. All rights reserved.</p>
+            <p class="mt-2 opacity-50 italic">Oopsy Loopsy — Habit & Task Tracker</p>
         </div>
     </footer>
 
