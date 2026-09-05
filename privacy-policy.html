@@ -25,11 +25,11 @@
         <a href="index.html" class="accent-link mb-8 inline-flex items-center gap-2">
             <i class="fa-solid fa-arrow-left"></i> Back to Home
         </a>
-        
+
         <div class="content-box p-8 md:p-16 rounded-[2.5rem] shadow-2xl shadow-black/50">
             <header class="mb-12 border-b border-slate-700 pb-8">
                 <h1 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">Privacy Policy</h1>
-                <p class="text-slate-500 font-medium">Last updated: Aug 25, 2026</p>
+                <p class="text-slate-500 font-medium">Last updated: Sep 6, 2026</p>
             </header>
 
             <section>
@@ -40,7 +40,7 @@
 
             <section>
                 <h2>2. Information We Collect</h2>
-                
+
                 <h3>2.1 Information You Provide</h3>
                 <p>Oopsy Loopsy is designed to work entirely on your device. The information you provide within the app includes:</p>
                 <ul>
@@ -59,6 +59,7 @@
                     <li>IP address and approximate location</li>
                     <li>Device type, operating system, and version</li>
                     <li>App usage data and interaction with ads</li>
+                    <li>App instance identifiers and technical tokens used by Firebase services (analytics, cloud messaging, and remote configuration)</li>
                 </ul>
                 <p>This data is collected by our advertising partners (Google AdMob and Unity Ads) to serve relevant advertisements. We do not have direct access to this data. Please refer
   to each partner's Privacy Policy for more information.</p>
@@ -70,7 +71,8 @@
                 <ul>
                     <li>Provide and maintain the core functionality of the app</li>
                     <li>Display your habits, tasks, streaks, and statistics</li>
-                    <li>Send you local notifications for habit reminders you have set</li>
+                    <li>Send you reminders you have set, and re-engagement notifications if you have not opened the app for an extended period</li>
+                    <li>Deliver push notifications, announcements, and tips through Firebase Cloud Messaging</li>
                     <li>Remember your app preferences such as theme settings</li>
                 </ul>
                 <p>We do not use your personal habit or task data for any commercial purpose, analytics, or advertising targeting.</p>
@@ -90,9 +92,9 @@
 
             <section>
                 <h2>5. Third-Party Services</h2>
-                
+
                 <h3>5.1 Google AdMob</h3>
-                <p>Our app may display advertisements served by Google AdMob. AdMob uses cookies and device identifiers to serve ads based on your prior visits to our app and other websites. You can opt out of personalized advertising by adjusting your device settings:</p>
+                <p>Our app may display advertisements served by Google AdMob, including banner, interstitial, rewarded, and app-open ad formats. AdMob uses cookies and device identifiers to serve ads based on your prior visits to our app and other websites. You can opt out of personalized advertising by adjusting your device settings:</p>
                 <p><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</p>
                 <p>For more information, please visit Google’s Privacy Policy at <a href="https://policies.google.com/privacy" class="accent-link">https://policies.google.com/privacy</a></p>
 
@@ -103,7 +105,7 @@
                 <p>You can opt out of personalized advertising by adjusting your device settings:</p>
                 <p><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</p>
                 <p>For more information, please visit Unity's Privacy Policy at <a href="https://unity.com/legal/privacy-policy" class="accent-link">https://unity.com/legal/privacy-policy</a></p>
-                
+
                 <h3>5.3 Firebase Analytics</h3>
                 <p>Oopsy Loopsy uses Google Analytics for Firebase to understand how users interact with the application and to improve the app's functionality and user experience.</p>
                 <p>Firebase Analytics may automatically collect certain information, including:</p>
@@ -114,8 +116,16 @@
                     <li>Approximate location information</li>
                     <li>App instance identifiers and other technical identifiers</li>
                 </ul>
-                <p>We do not intentionally collect or send your personal habit names, task content, mood entries, descriptions, reminder content, or other personal data to Firebase Analytics. We do not create custom analytics events or custom user properties containing your personal habit, task, or mood information.</p>
+                <p>We may log non-personal, aggregated events (for example, which screen or tab was opened, or whether a notification was shown) to understand feature usage. We do not intentionally collect or send your personal habit names, task content, mood entries, descriptions, reminder content, or other personal data to Firebase Analytics. We do not create custom analytics events or custom user properties containing your personal habit, task, or mood information.</p>
                 <p>Firebase Analytics processes this information to provide aggregated analytics and usage insights. We do not use your personal habit, task, or mood data for analytics or advertising purposes. For more information about how Google Analytics for Firebase collects and processes data, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" class="accent-link">https://policies.google.com/privacy</a></p>
+
+                <h3>5.4 Firebase Cloud Messaging</h3>
+                <p>Oopsy Loopsy uses Firebase Cloud Messaging (FCM) to deliver push notifications, such as reminders and occasional announcements or tips from the developer.</p>
+                <p>To enable this, FCM generates a unique registration token for your app installation, which Google processes in order to route messages to your device. Every installation is also automatically subscribed to a general messaging topic, which allows us to send broadcast announcements without collecting or storing individual device tokens on our own servers.</p>
+                <p>This token is not linked to your identity or to your habit, task, or mood data. You can turn push notifications off at any time from your device's notification settings for the app. For more information, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" class="accent-link">https://policies.google.com/privacy</a></p>
+
+                <h3>5.5 Firebase Remote Config</h3>
+                <p>We use Firebase Remote Config to adjust certain in-app settings and content (such as feature flags and messaging text) without requiring an app update. To fetch this configuration, an app instance identifier and basic device/context information are sent to Google. Remote Config does not collect your personal habit, task, or mood data. For more information, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" class="accent-link">https://policies.google.com/privacy</a></p>
             </section>
 
             <section>
@@ -131,6 +141,7 @@
                     <li>Delete individual habits, tasks, or logs within the app</li>
                     <li>Delete all app data by uninstalling the application</li>
                     <li>Opt out of personalized ads through your device settings</li>
+                    <li>Turn off push notifications through your device's app notification settings</li>
                 </ul>
                 <p>If you are located in the European Economic Area (EEA), you have certain data protection rights under GDPR. Since we do not collect or process your personal habit data on our servers, most GDPR obligations are fulfilled by the local-only storage model.</p>
             </section>
@@ -167,7 +178,7 @@
                 </div>
             </section>
         </div>
-        
+
         <footer class="mt-12 text-center text-slate-600 text-sm pb-10">
             <p>&copy; 2026 Devmo Studio. All rights reserved.</p>
         </footer>
