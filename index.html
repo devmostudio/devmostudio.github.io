@@ -48,10 +48,31 @@
             </div>
         </div>
     </nav>
-
-    <div>
-        <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tight text-white">Simplifying habit tracking</h1>
+    <div class="hero">
+        <h2 class="hero-title">Simplifying habit tracking</h2>
     </div>
+    .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* dikeyde ortalar */
+    justify-content: center; /* yatayda ortalar */
+    padding: 0 16px;
+    }
+
+    .hero-title {
+    text-align: center; /* birden fazla satıra bölünürse satırları ortalar */
+    font-size: 3.75rem; /* text-6xl */
+    font-weight: 900; /* font-black */
+    letter-spacing: -0.025em; /* tracking-tight */
+    color: #fff; /* text-white */
+    margin: 0 0 2rem; /* mb-8 */
+    }
+
+    @media (min-width: 768px) {
+    .hero-title {
+    font-size: 6rem; /* md:text-8xl */
+    }
+    }
     <!-- Kaydırmalı hikâye: Tam ekran görsel -->
     <div class="scx" id="scx-6dzydf">
         <script type="application/json"
